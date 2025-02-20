@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+aside {
+  width: 250px;
+  background-color: #d2c3c1;
+  color: #79757b;
+  position: fixed;
+  left: 0%;
+  top: 100px;
+  height: 1000px;
+  font-size: 11px;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside h1 {
+  color: black;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+aside h3,
+aside h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #79757b;
+}
+
+aside .p {
+  margin: 20px 25px 20px 20px;
+}
+
+aside .type {
+  margin-top: 40px;
+}
+
+aside .type,
+aside h5,
+form,
+aside .btn {
+  margin-left: 20px;
+  font-size: 11px;
+}
+
+aside .type ul li {
+  list-style: none;
+  margin: 5px 0px 5px 25px;
+}
+
+aside .type a {
+  text-decoration: none;
+  color: #79757b;
+}
+
+aside .type a:hover {
+  color: #1e2436;
+
+}
+
+aside form {
+  margin-top: 10px;
+}
+
+aside form #currentPrice {
+  color: black;
+  margin-right: 10px;
+}
+
+aside form #btn {
+  border-radius: 10px;
+  color: white;
+  background-color: #79757b;
+  width: 50%;
+  margin-top: 10px;
+}
+
+aside .btn {
+  height: 20px;
+  width: 50%;
+  border-radius: 10px;
+  color: white;
+  background-color: #79757b;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* organiser les boites */
+.m {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 100%;
+  justify-content: center;
+  font-size: 15px;
+
+}
+
+.car {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  width: 280px;
+  justify-content: center;
+}
+
+
+.car p {
+  text-align: center;
+  width: 100%;
+  background-color: #f0e2e3;
+  border: 0.5px solid rgba(255, 0, 0, 0.534);
+}
+
+.m .car p:hover {
+  background-color: rgb(24, 19, 90);
+  color: #fff;
+
+}
+
+/* le button de chaque photo */
+.car button {
+  color: white;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  background: #13063a;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.car button:hover {
+  background: black;
+}
+
+/* cacher aside et faire un icon pour l'afficher  */
+aside {
+  display: none;
+}
+
+.slide hr {
+  width: 35px;
+  border: 1.8px solid black;
+  margin: 5px;
+
+}
+
+.slide:hover aside {
+  display: block;
+  position: sticky;
+  width: 200px;
+}
+
+/* medium  */
+@media (max-width:900px) {
+  aside {
+    display: none;
+  }
+
+  .slide hr {
+    width: 35px;
+    border: 1.8px solid black;
+    margin: 5px;
+
+  }
+
+  .slide:hover aside {
+    display: block;
+    position: sticky;
+    width: 200px;
+  }
+
+  .m {
+    font-size: 15px;
+    margin-left: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* small size  */
+@media (max-width:500px) {
+  aside {
+    display: none;
+
+  }
+
+  .slide hr {
+    width: 35px;
+    border: 1.8px solid black;
+    margin: 5px;
+
+  }
+
+  .slide:hover aside {
+    display: block;
+    position: sticky;
+    width: 200px;
+  }
+
+  .car {
+    margin-left: 0px;
+  }
+
+  .m {
+    font-size: 15px;
+    margin-left: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+}

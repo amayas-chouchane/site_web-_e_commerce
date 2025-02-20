@@ -1,0 +1,155 @@
+.head {
+    position: relative;
+}
+
+.head h2 {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.head img {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.content .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.content .image img {
+    margin: 50px;
+}
+
+.content p {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.content .p {
+    text-align: center;
+    color: black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content p::first-letter {
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.content .p h1 {
+    font-size: 40px;
+}
+
+.content p::first-letter {
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+@media (max-width: 900px) {
+    .content .p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .content p::first-letter {
+        color: black;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .content .image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .content .p {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .content p::first-letter {
+        color: black;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .content .image {
+        width: 100%;
+    }
+}
+
+.equipe {
+    background-color:rgb(22, 22, 74);
+}
+
+.equipe h2 {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.equipe .nos-membre {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.membre .rec {
+    height: 100px;
+    width: 100px;
+    background-color: #f0e2e3;
+    margin: 20px;
+}
+
+.membre p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.membre hr {
+    width: 50px;
+    border: 3px solid rgba(255,0,0, 0.7);
+    border-radius: 30px;
+    margin: auto;
+}

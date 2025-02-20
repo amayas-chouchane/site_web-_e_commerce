@@ -1,0 +1,92 @@
+.head .cont {
+    background-color: rgb(14, 14, 140);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    color: white;
+
+
+}
+
+
+.head .cont h1{
+    font-size: 20px;
+}
+
+
+
+.head .cont h4 {
+    font-size: 15px;
+
+}
+
+
+.tel,
+.mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    width: 200px;
+    height: 110px;
+    background-color: #dbd3d3;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 20px;
+}
+
+.resp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    flex-wrap: wrap;
+
+}
+
+
+
+.formu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+}
+
+.formu form {
+    width: 441px;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+}
+
+.formu form label span {
+    color: red;
+
+}
+
+.formu form input {
+    width: 97%;
+    height: 30px;
+    margin: 10px 0px;
+    margin-right: 20px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.formu form textarea {
+    width: 98%;
+    margin: 5px 0px;
+    border: 2px solid black;
+
+}
+
+.formu form .envoyer {
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+}

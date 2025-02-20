@@ -1,0 +1,161 @@
+body {
+	
+	font-family: Lexend Deca;
+}
+
+
+/* start variables */
+:root {
+	--maincolor: white;
+}
+
+/* end variables */
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+
+
+.login {
+	margin: 10px;
+}
+
+.login h2 {
+	color: #1e2336;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 80px;
+	letter-spacing: 0px;
+	text-align: center;
+
+}
+
+.login p {
+	color: #1e2336;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: center;
+	width: 347px;
+	margin-bottom: 30px;
+	margin-left: -3%;
+
+}
+
+.login .us #user,
+.login .ps #pass {
+	background-color: var(--maincolor);
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 45px;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+.login .us #user::placeholder,
+.login .ps #pass::placeholder {
+	color: black;
+	font-weight: bold;
+	position: absolute;
+	padding: 10px;
+	left: 10px;
+	top: 10%;
+}
+
+.formu form input::placeholder {
+	color: black;
+	font-weight: bold;
+	padding: 10px;
+
+}
+.login button {
+	background-color:  rgb(22, 22, 74);
+	position: relative;
+	top: 24px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 45px;
+	border-radius: 10px;
+	color: var(--maincolor);
+}
+
+.login .chek {
+	position: relative;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	font-size: 11px;
+}
+
+.login .chek a {
+	position: absolute;
+	right: 0%;
+	text-decoration: none;
+	color: #1e2336;
+	font-size: 11px;
+}
+
+.login .chek a:hover {
+	text-decoration: underline;
+	color:  rgb(22, 22, 74);
+
+}
+
+.formu h2 {
+	color: #1e2336;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size: 30px;
+
+}
+
+.formu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 120px;
+	margin-left: 120px;
+}
+
+label {
+	color: #1e2336;
+	font-size: 11px;
+}
+
+.formu form {
+	width: 441px;
+	padding: 20px;
+	color: black;
+}
+
+.formu form label span {
+	color: red;
+
+}
+
+.formu form input {
+	margin: 10px 0px;
+	margin-right: 20px;
+	border: 2px solid black;
+	padding: 5px;
+	background-color: var(--maincolor);
+	width: 300px;
+	height: 45px;
+	border-radius: 10px;
+}
+
+.formu form .envoyer {
+	background-color: rgb(22, 22, 74);
+	color: white;
+	border-radius: 20px;
+	width: 100px;
+	text-align: center;
+}

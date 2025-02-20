@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --blue:#4027ae;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    
+}
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    transition:width none;
+}
+
+html{
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+/* barre de défilement  */
+html::-webkit-scrollbar{
+    width: 1rem;
+
+}
+html::-webkit-scrollbar-track{
+    background:transparent;
+
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--black)
+}
+
+
+/* section */
+
+section{
+    padding: 0 9%;
+}
+
+/* sectionhome */
+
+.secthome{
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #362672;
+}
+
+.secthome .content{
+    margin-bottom:70px;
+}
+
+.secthome .content h2{
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+.secthome .content h1{
+    font-size: 5rem;
+    color: #fff;
+}
+
+.secthome .content p{
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.secthome button{
+    padding: .7rem 4rem;
+    margin-top: 1.5rem;
+    margin-right: 10px;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #999;
+    border: .1rem solid #dee4ee;
+    }
+
+
+.secthome button:hover{
+    background: #3f3786;
+    color: white;
+}
+
+/* section2 */
+
+.sect2{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sect2 h2{
+    font-weight: bolder;
+    color: #292634;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.sect2 p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.sect2 .c1{
+    font-size: 50px;
+    color: #2f1f76;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.sect2 .hbr{
+
+    border-right: 1px solid var(--light-color);
+    margin: 0 10px;
+}
+
+    
+
+/* section3 */
+
+.sect3{
+    background-color: rgb(32, 32, 106);
+    padding-bottom: 70px;
+}
+
+.sect3 .ecriture{
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    padding: 70px 0;
+
+}
+
+.sect3 .ecriture h1{
+    font-size: 6rem;
+}
+
+.sect3 .ecriture h2{
+    font-size: 2rem;
+    color: #c7c4c4;
+}
+
+.sect3 .lesphotos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sect3 div .p2{
+    background-color: #210696;
+    position: relative;
+    bottom: 6px;
+    text-align: center;
+    padding:20px 0
+}
+
+.sect3 div .p2 h1{
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+.sect3 div .p2 button{
+    padding: 5px 5px;
+    color: var(--light-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 20px ;
+    width: 8rem;
+}
+
+.sect3 div .p2 button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #1716168a;
+}
+ 
+ /* media queries */
+    
+@media (max-width:1400px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .secthome .content h2{
+        font-size: 2.3rem;
+        color: #fff;
+    }
+
+    .secthome .content h1{
+        font-size: 4rem;
+        color: #fff;
+    }
+
+    .secthome .content p{
+        font-size: 1.3rem;
+        color: #eee;
+    }
+
+    .secthome .image img{
+        width:  50rem;
+    }
+
+    .sect3 .lesphotos{
+        display: block;
+        text-align: center;
+    }
+
+    .sect3 div .p2{
+        text-align: center;
+        margin-bottom: 35px;
+        background: rgb(12, 12, 114);
+    }
+    }
+
+@media (max-width:980px){
+
+    .secthome .image{
+        display: none;
+    }
+
+    .secthome .content {
+    
+        text-align: center;
+    }
+}
+
+
+@media (max-width:768px){
+
+    html{
+        scroll-padding-top: 0;
+    }
+
+    body{
+        padding-bottom: 6rem;
+    }
+
+    .sect2{
+        display: block;
+    }
+
+    .sect2 .hbr{
+        display: block;
+        border-top: 1px solid var(--light-color);
+        margin: 12px 0;
+    }
+
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 47%;
+    }
+
+}
+
+    
+    
+    
